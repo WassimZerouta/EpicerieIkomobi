@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFAAD6D62BA46B2B00AAC78E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD6D52BA46B2B00AAC78E /* AppDelegate.swift */; };
+		CFAAD6D82BA46B2B00AAC78E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD6D72BA46B2B00AAC78E /* SceneDelegate.swift */; };
+		CFAAD6DA2BA46B2B00AAC78E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD6D92BA46B2B00AAC78E /* ViewController.swift */; };
+		CFAAD6DD2BA46B2B00AAC78E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CFAAD6DC2BA46B2B00AAC78E /* Base */; };
+		CFAAD6DF2BA46B2D00AAC78E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAAD6DE2BA46B2D00AAC78E /* Assets.xcassets */; };
+		CFAAD6E22BA46B2D00AAC78E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CFAAD6E12BA46B2D00AAC78E /* Base */; };
+		CFAAD6ED2BA46B2E00AAC78E /* EpicerieIkomobiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD6EC2BA46B2E00AAC78E /* EpicerieIkomobiTests.swift */; };
+		CFAAD6F72BA46B2E00AAC78E /* EpicerieIkomobiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD6F62BA46B2E00AAC78E /* EpicerieIkomobiUITests.swift */; };
+		CFAAD6F92BA46B2E00AAC78E /* EpicerieIkomobiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD6F82BA46B2E00AAC78E /* EpicerieIkomobiUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFAAD6E92BA46B2E00AAC78E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFAAD6CA2BA46B2B00AAC78E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFAAD6D12BA46B2B00AAC78E;
+			remoteInfo = EpicerieIkomobi;
+		};
+		CFAAD6F32BA46B2E00AAC78E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFAAD6CA2BA46B2B00AAC78E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFAAD6D12BA46B2B00AAC78E;
+			remoteInfo = EpicerieIkomobi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFAAD6D22BA46B2B00AAC78E /* EpicerieIkomobi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpicerieIkomobi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAAD6D52BA46B2B00AAC78E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFAAD6D72BA46B2B00AAC78E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CFAAD6D92BA46B2B00AAC78E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFAAD6DC2BA46B2B00AAC78E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFAAD6DE2BA46B2D00AAC78E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFAAD6E12BA46B2D00AAC78E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFAAD6E32BA46B2D00AAC78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFAAD6E82BA46B2E00AAC78E /* EpicerieIkomobiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpicerieIkomobiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAAD6EC2BA46B2E00AAC78E /* EpicerieIkomobiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicerieIkomobiTests.swift; sourceTree = "<group>"; };
+		CFAAD6F22BA46B2E00AAC78E /* EpicerieIkomobiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpicerieIkomobiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAAD6F62BA46B2E00AAC78E /* EpicerieIkomobiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicerieIkomobiUITests.swift; sourceTree = "<group>"; };
+		CFAAD6F82BA46B2E00AAC78E /* EpicerieIkomobiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicerieIkomobiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFAAD6CF2BA46B2B00AAC78E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAAD6E52BA46B2E00AAC78E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAAD6EF2BA46B2E00AAC78E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFAAD6C92BA46B2B00AAC78E = {
+			isa = PBXGroup;
+			children = (
+				CFAAD6D42BA46B2B00AAC78E /* EpicerieIkomobi */,
+				CFAAD6EB2BA46B2E00AAC78E /* EpicerieIkomobiTests */,
+				CFAAD6F52BA46B2E00AAC78E /* EpicerieIkomobiUITests */,
+				CFAAD6D32BA46B2B00AAC78E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFAAD6D32BA46B2B00AAC78E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFAAD6D22BA46B2B00AAC78E /* EpicerieIkomobi.app */,
+				CFAAD6E82BA46B2E00AAC78E /* EpicerieIkomobiTests.xctest */,
+				CFAAD6F22BA46B2E00AAC78E /* EpicerieIkomobiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFAAD6D42BA46B2B00AAC78E /* EpicerieIkomobi */ = {
+			isa = PBXGroup;
+			children = (
+				CFAAD6D52BA46B2B00AAC78E /* AppDelegate.swift */,
+				CFAAD6D72BA46B2B00AAC78E /* SceneDelegate.swift */,
+				CFAAD6D92BA46B2B00AAC78E /* ViewController.swift */,
+				CFAAD6DB2BA46B2B00AAC78E /* Main.storyboard */,
+				CFAAD6DE2BA46B2D00AAC78E /* Assets.xcassets */,
+				CFAAD6E02BA46B2D00AAC78E /* LaunchScreen.storyboard */,
+				CFAAD6E32BA46B2D00AAC78E /* Info.plist */,
+			);
+			path = EpicerieIkomobi;
+			sourceTree = "<group>";
+		};
+		CFAAD6EB2BA46B2E00AAC78E /* EpicerieIkomobiTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFAAD6EC2BA46B2E00AAC78E /* EpicerieIkomobiTests.swift */,
+			);
+			path = EpicerieIkomobiTests;
+			sourceTree = "<group>";
+		};
+		CFAAD6F52BA46B2E00AAC78E /* EpicerieIkomobiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFAAD6F62BA46B2E00AAC78E /* EpicerieIkomobiUITests.swift */,
+				CFAAD6F82BA46B2E00AAC78E /* EpicerieIkomobiUITestsLaunchTests.swift */,
+			);
+			path = EpicerieIkomobiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFAAD6D12BA46B2B00AAC78E /* EpicerieIkomobi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFAAD6FC2BA46B2E00AAC78E /* Build configuration list for PBXNativeTarget "EpicerieIkomobi" */;
+			buildPhases = (
+				CFAAD6CE2BA46B2B00AAC78E /* Sources */,
+				CFAAD6CF2BA46B2B00AAC78E /* Frameworks */,
+				CFAAD6D02BA46B2B00AAC78E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EpicerieIkomobi;
+			productName = EpicerieIkomobi;
+			productReference = CFAAD6D22BA46B2B00AAC78E /* EpicerieIkomobi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFAAD6E72BA46B2E00AAC78E /* EpicerieIkomobiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFAAD6FF2BA46B2E00AAC78E /* Build configuration list for PBXNativeTarget "EpicerieIkomobiTests" */;
+			buildPhases = (
+				CFAAD6E42BA46B2E00AAC78E /* Sources */,
+				CFAAD6E52BA46B2E00AAC78E /* Frameworks */,
+				CFAAD6E62BA46B2E00AAC78E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFAAD6EA2BA46B2E00AAC78E /* PBXTargetDependency */,
+			);
+			name = EpicerieIkomobiTests;
+			productName = EpicerieIkomobiTests;
+			productReference = CFAAD6E82BA46B2E00AAC78E /* EpicerieIkomobiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFAAD6F12BA46B2E00AAC78E /* EpicerieIkomobiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFAAD7022BA46B2E00AAC78E /* Build configuration list for PBXNativeTarget "EpicerieIkomobiUITests" */;
+			buildPhases = (
+				CFAAD6EE2BA46B2E00AAC78E /* Sources */,
+				CFAAD6EF2BA46B2E00AAC78E /* Frameworks */,
+				CFAAD6F02BA46B2E00AAC78E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFAAD6F42BA46B2E00AAC78E /* PBXTargetDependency */,
+			);
+			name = EpicerieIkomobiUITests;
+			productName = EpicerieIkomobiUITests;
+			productReference = CFAAD6F22BA46B2E00AAC78E /* EpicerieIkomobiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFAAD6CA2BA46B2B00AAC78E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CFAAD6D12BA46B2B00AAC78E = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					CFAAD6E72BA46B2E00AAC78E = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CFAAD6D12BA46B2B00AAC78E;
+					};
+					CFAAD6F12BA46B2E00AAC78E = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CFAAD6D12BA46B2B00AAC78E;
+					};
+				};
+			};
+			buildConfigurationList = CFAAD6CD2BA46B2B00AAC78E /* Build configuration list for PBXProject "EpicerieIkomobi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFAAD6C92BA46B2B00AAC78E;
+			productRefGroup = CFAAD6D32BA46B2B00AAC78E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFAAD6D12BA46B2B00AAC78E /* EpicerieIkomobi */,
+				CFAAD6E72BA46B2E00AAC78E /* EpicerieIkomobiTests */,
+				CFAAD6F12BA46B2E00AAC78E /* EpicerieIkomobiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFAAD6D02BA46B2B00AAC78E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFAAD6DF2BA46B2D00AAC78E /* Assets.xcassets in Resources */,
+				CFAAD6E22BA46B2D00AAC78E /* Base in Resources */,
+				CFAAD6DD2BA46B2B00AAC78E /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAAD6E62BA46B2E00AAC78E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAAD6F02BA46B2E00AAC78E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFAAD6CE2BA46B2B00AAC78E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFAAD6DA2BA46B2B00AAC78E /* ViewController.swift in Sources */,
+				CFAAD6D62BA46B2B00AAC78E /* AppDelegate.swift in Sources */,
+				CFAAD6D82BA46B2B00AAC78E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAAD6E42BA46B2E00AAC78E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFAAD6ED2BA46B2E00AAC78E /* EpicerieIkomobiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFAAD6EE2BA46B2E00AAC78E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFAAD6F72BA46B2E00AAC78E /* EpicerieIkomobiUITests.swift in Sources */,
+				CFAAD6F92BA46B2E00AAC78E /* EpicerieIkomobiUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFAAD6EA2BA46B2E00AAC78E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFAAD6D12BA46B2B00AAC78E /* EpicerieIkomobi */;
+			targetProxy = CFAAD6E92BA46B2E00AAC78E /* PBXContainerItemProxy */;
+		};
+		CFAAD6F42BA46B2E00AAC78E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFAAD6D12BA46B2B00AAC78E /* EpicerieIkomobi */;
+			targetProxy = CFAAD6F32BA46B2E00AAC78E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFAAD6DB2BA46B2B00AAC78E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFAAD6DC2BA46B2B00AAC78E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFAAD6E02BA46B2D00AAC78E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFAAD6E12BA46B2D00AAC78E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFAAD6FA2BA46B2E00AAC78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFAAD6FB2BA46B2E00AAC78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFAAD6FD2BA46B2E00AAC78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U2442PUVK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EpicerieIkomobi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zerouta.wassim.EpicerieIkomobi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFAAD6FE2BA46B2E00AAC78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U2442PUVK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EpicerieIkomobi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zerouta.wassim.EpicerieIkomobi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFAAD7002BA46B2E00AAC78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U2442PUVK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zerouta.wassim.EpicerieIkomobiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EpicerieIkomobi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EpicerieIkomobi";
+			};
+			name = Debug;
+		};
+		CFAAD7012BA46B2E00AAC78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U2442PUVK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zerouta.wassim.EpicerieIkomobiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EpicerieIkomobi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EpicerieIkomobi";
+			};
+			name = Release;
+		};
+		CFAAD7032BA46B2E00AAC78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U2442PUVK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zerouta.wassim.EpicerieIkomobiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EpicerieIkomobi;
+			};
+			name = Debug;
+		};
+		CFAAD7042BA46B2E00AAC78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9U2442PUVK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zerouta.wassim.EpicerieIkomobiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EpicerieIkomobi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFAAD6CD2BA46B2B00AAC78E /* Build configuration list for PBXProject "EpicerieIkomobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFAAD6FA2BA46B2E00AAC78E /* Debug */,
+				CFAAD6FB2BA46B2E00AAC78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFAAD6FC2BA46B2E00AAC78E /* Build configuration list for PBXNativeTarget "EpicerieIkomobi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFAAD6FD2BA46B2E00AAC78E /* Debug */,
+				CFAAD6FE2BA46B2E00AAC78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFAAD6FF2BA46B2E00AAC78E /* Build configuration list for PBXNativeTarget "EpicerieIkomobiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFAAD7002BA46B2E00AAC78E /* Debug */,
+				CFAAD7012BA46B2E00AAC78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFAAD7022BA46B2E00AAC78E /* Build configuration list for PBXNativeTarget "EpicerieIkomobiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFAAD7032BA46B2E00AAC78E /* Debug */,
+				CFAAD7042BA46B2E00AAC78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFAAD6CA2BA46B2B00AAC78E /* Project object */;
+}
