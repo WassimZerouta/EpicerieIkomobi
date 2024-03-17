@@ -9,28 +9,60 @@ import XCTest
 @testable import EpicerieIkomobi
 
 final class EpicerieIkomobiTests: XCTestCase {
-
+    
+    private var viewmodel: HomeViewModel!
+    private var APIService: MockAPIManager!
+    private var delegate: MockHomeViewController!
+    
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        APIService = MockAPIManager()
+        viewmodel = HomeViewModel(APIService: APIService)
+        delegate = MockHomeViewController()
+        viewmodel.delegate = delegate
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        APIService = nil
+        viewmodel = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testSuccess() throws {
+        let homePageContent = HomePageContent(banner: Banner(image: ""), categories: [Category(id: 1, name: "Fruits", image: "")], products: [Product(id: 1, name: "Orange", price: 2.0, image: "", packaging: Packaging(unit: "kg", measure: 2.0))])
+        
+        APIService.mockResult = .success(homePageContent)
+        viewmodel.fetchHomePageContent()
+
+        XCTAssertEqual(delegate.updateViewArray[0].categories[0].name, "Fruits")
+    }
+    
+    func testFailure() throws {
+        
+        APIService.mockResult = .failure(.dataNotFound)
+        viewmodel.fetchHomePageContent()
+        
+        XCTAssertEqual(delegate.updateViewArray.count, 0)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+}
+
+class MockAPIManager: APIService {
+    var mockResult: Result<EpicerieIkomobi.HomePageContent, EpicerieIkomobi.CustomError>?
+    func fetchHomePageContent(completion: @escaping (Result<EpicerieIkomobi.HomePageContent, EpicerieIkomobi.CustomError>) -> Void) {
+        if let result = mockResult {
+            completion(result)
         }
     }
+    
 
+}
+
+class MockHomeViewController: HomeViewModelDelegate {
+    
+    public var updateViewArray: [HomePageContent] = []
+    
+    func updateView(banner: EpicerieIkomobi.Banner, categories: [EpicerieIkomobi.Category], products: [EpicerieIkomobi.Product]) {
+        updateViewArray.append(HomePageContent(banner: banner, categories: categories, products: products))
+    
+    } 
 }
