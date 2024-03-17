@@ -19,7 +19,7 @@ class BestSellersCollectionViewCell: UICollectionViewCell {
     
     var backgroundImageView: UIView = {
         let view = UIView()
-        view.backgroundColor = AppStyle.backgroundProductColor.color
+        view.backgroundColor = AppStyleColor.backgroundProductColor.color
         view.layer.cornerRadius = 15
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -42,18 +42,18 @@ class BestSellersCollectionViewCell: UICollectionViewCell {
     
     var nameLabel: UILabel = {
         let label = UILabel()
-        label.font = AppStyle.body.font
+        label.font = AppStyleFont.body.font
         label.textAlignment = .left
-        label.textColor = AppStyle.body.color
+        label.textColor = AppStyleFont.body.color
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     var weightLabel: UILabel = {
         let label = UILabel()
-        label.font = AppStyle.caption.font
+        label.font = AppStyleFont.caption.font
         label.textAlignment = .left
-        label.textColor = AppStyle.caption.color
+        label.textColor = AppStyleFont.caption.color
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -61,9 +61,9 @@ class BestSellersCollectionViewCell: UICollectionViewCell {
     
     var priceLabel: UILabel = {
         let label = UILabel()
-        label.font = AppStyle.captionBold.font
+        label.font = AppStyleFont.captionBold.font
         label.textAlignment = .left
-        label.textColor = AppStyle.caption.color
+        label.textColor = AppStyleFont.caption.color
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -79,9 +79,9 @@ class BestSellersCollectionViewCell: UICollectionViewCell {
     
     var quantityLabel: UILabel = {
         let label = UILabel()
-        label.font = AppStyle.title.font
+        label.font = AppStyleFont.title.font
         label.text = ""
-        label.textColor = AppStyle.title.color
+        label.textColor = AppStyleFont.title.color
         label.textAlignment = .center
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -90,7 +90,7 @@ class BestSellersCollectionViewCell: UICollectionViewCell {
     
     var plusButton: UIView = {
         let view = UIView()
-        view.backgroundColor = AppStyle.backgroundPlusButtonColor.color
+        view.backgroundColor = AppStyleColor.backgroundPlusButtonColor.color
         view.layer.cornerRadius = 18
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -99,7 +99,7 @@ class BestSellersCollectionViewCell: UICollectionViewCell {
     var plusImageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
-        image.image = AppResource.plusIcon.image
+        image.image = AppResourceImage.plusIcon.image
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -107,7 +107,7 @@ class BestSellersCollectionViewCell: UICollectionViewCell {
     
     var minusButton: UIView = {
         let view = UIView()
-        view.backgroundColor = AppStyle.backgroundMinusButtonColor.color
+        view.backgroundColor = AppStyleColor.backgroundMinusButtonColor.color
         view.layer.cornerRadius = 18
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -116,7 +116,7 @@ class BestSellersCollectionViewCell: UICollectionViewCell {
     var minusImageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
-        image.image = AppResource.minusIcon.image
+        image.image = AppResourceImage.minusIcon.image
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()

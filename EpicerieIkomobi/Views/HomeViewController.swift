@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
     
     let scrollView: UIScrollView = {
         let view = UIScrollView()
-        view.backgroundColor = AppStyle.primaryColor.color
+        view.backgroundColor = AppStyleColor.primaryColor.color
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -39,14 +39,14 @@ class HomeViewController: UIViewController {
         let view = UIStackView()
         view.axis = .vertical
         view.spacing = 20
-        view.backgroundColor = AppStyle.primaryColor.color
+        view.backgroundColor = AppStyleColor.primaryColor.color
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
     let topView: TopView = {
         let view = TopView()
-        view.backgroundColor = AppStyle.primaryColor.color
+        view.backgroundColor = AppStyleColor.primaryColor.color
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

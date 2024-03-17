@@ -12,9 +12,9 @@ class CategoriesView: UIStackView {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = AppResource.categoriesViewTitle.text
-        label.textColor = AppStyle.title.color
-        label.font = AppStyle.title.font
+        label.text = AppResourceText.categoriesViewTitle.text
+        label.textColor = AppStyleFont.title.color
+        label.font = AppStyleFont.title.font
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

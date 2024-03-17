@@ -8,20 +8,12 @@
 import Foundation
 import UIKit
 
-enum AppResource {
-    //TEXT
+
+enum AppResourceText {
     case topViewHelloLabel
     case topViewProfilNameLabel
     case categoriesViewTitle
     case BestSellersViewTitle
-   // IMAGE
-    case topViewProfilImageView
-    case cartIcon
-    case tomuchInCartIcon
-    case plusIcon
-    case minusIcon
-    //URL
-    case stringUrl
     
     var text: String {
         switch self {
@@ -33,10 +25,16 @@ enum AppResource {
             return "Bonjour"
         case .topViewProfilNameLabel:
             return  "Jean Pascal"
-        default:
-           return ""
         }
     }
+}
+
+enum AppResourceImage {
+    case topViewProfilImageView
+    case cartIcon
+    case tomuchInCartIcon
+    case plusIcon
+    case minusIcon
     
     var image: UIImage {
         switch self {
@@ -50,17 +48,17 @@ enum AppResource {
             return UIImage(systemName: "plus")?.withTintColor(.white, renderingMode: .alwaysOriginal) ?? UIImage()
         case .minusIcon:
             return UIImage(systemName: "minus")?.withTintColor(.gray, renderingMode: .alwaysOriginal) ?? UIImage()
-        default:
-           return UIImage()
         }
     }
+}
+
+enum AppResourceURL {
+    case stringUrl
     
     var url: String {
         switch self {
         case .stringUrl:
             return "https://agf.ikomobi.fr/ios-hiring-test/home.json"
-        default:
-           return "https://agf.ikomobi.fr/ios-hiring-test/home.json"
         }
     }
 }

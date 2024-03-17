@@ -25,7 +25,7 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
     
     var backgroundImageView: UIView = {
         let view = UIView()
-        view.backgroundColor = AppStyle.backgroundProductColor.color
+        view.backgroundColor = AppStyleColor.backgroundProductColor.color
         view.layer.cornerRadius = 40
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -40,8 +40,8 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
 
     var nameLabel: UILabel = {
         let label = UILabel()
-        label.font = AppStyle.body.font
-        label.textColor = AppStyle.body.color
+        label.font = AppStyleFont.body.font
+        label.textColor = AppStyleFont.body.color
         label.textAlignment = .center
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false

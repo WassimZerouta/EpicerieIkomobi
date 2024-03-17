@@ -8,19 +8,12 @@
 import Foundation
 import UIKit
 
-enum AppStyle {
-    //COLOR
+
+enum AppStyleColor {
     case primaryColor
     case backgroundProductColor
     case backgroundPlusButtonColor
     case backgroundMinusButtonColor
-    //FONT
-    case textColor
-    case title
-    case title2
-    case body
-    case caption
-    case captionBold
     
     var color: UIColor {
         switch self {
@@ -32,6 +25,20 @@ enum AppStyle {
             return UIColor(named:"backgroundPlusButtonColor") ?? .green
         case .backgroundMinusButtonColor:
             return UIColor(named:"backgroundMinusButtonColor") ?? .gray
+        }
+    }
+}
+
+enum AppStyleFont {
+    case textColor
+    case title
+    case title2
+    case body
+    case caption
+    case captionBold
+    
+    var color: UIColor {
+        switch self {
         case .title:
             return .black
         case .body:

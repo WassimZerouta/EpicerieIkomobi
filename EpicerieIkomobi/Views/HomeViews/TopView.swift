@@ -14,7 +14,7 @@ class TopView: UIView {
     
     let profilImageView: UIImageView = {
         let view = UIImageView()
-        view.image = AppResource.topViewProfilImageView.image
+        view.image = AppResourceImage.topViewProfilImageView.image
         view.contentMode = .scaleAspectFill
         view.layer.cornerRadius = 25
         view.clipsToBounds = true
@@ -32,25 +32,25 @@ class TopView: UIView {
     
     let helloLabel: UILabel = {
         let label = UILabel()
-        label.text = AppResource.topViewHelloLabel.text
+        label.text = AppResourceText.topViewHelloLabel.text
         label.textColor = .lightGray
-        label.font = AppStyle.captionBold.font
+        label.font = AppStyleFont.captionBold.font
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     let profilNameLabel: UILabel = {
         let label = UILabel()
-        label.text = AppResource.topViewProfilNameLabel.text
-        label.textColor = AppStyle.textColor.color
-        label.font = AppStyle.title2.font
+        label.text = AppResourceText.topViewProfilNameLabel.text
+        label.textColor = AppStyleFont.textColor.color
+        label.font = AppStyleFont.title2.font
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     var backgroundImageView: UIView = {
         let view = UIView()
-        view.backgroundColor = AppStyle.backgroundProductColor.color
+        view.backgroundColor = AppStyleColor.backgroundProductColor.color
         view.layer.cornerRadius = 15
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -59,7 +59,7 @@ class TopView: UIView {
     var cartImageView: UIImageView = {
         let view = UIImageView()
         view.contentMode = .scaleAspectFit
-        view.image = AppResource.cartIcon.image
+        view.image = AppResourceImage.cartIcon.image
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -127,7 +127,7 @@ extension TopView: TopViewModelDelegate {
             cartQuantityImageView.image = UIImage(systemName: "\(cartQuantity).circle.fill")?.withTintColor(.red, renderingMode: .alwaysOriginal)
         } else if cartQuantity > 49 {
             cartQuantityImageView.isHidden = false
-            cartQuantityImageView.image = AppResource.tomuchInCartIcon.image
+            cartQuantityImageView.image = AppResourceImage.tomuchInCartIcon.image
         }
         else {
             cartQuantityImageView.isHidden = true
