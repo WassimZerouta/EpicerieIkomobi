@@ -127,7 +127,7 @@ class HomeViewController: UIViewController {
             bestSellersView.topAnchor.constraint(equalTo: categoriesView.bottomAnchor, constant: 20),
             bestSellersView.leadingAnchor.constraint(equalTo: scrollViewContainer.leadingAnchor),
             bestSellersView.trailingAnchor.constraint(equalTo: scrollViewContainer.trailingAnchor),
-            bestSellersView.heightAnchor.constraint(greaterThanOrEqualToConstant: 1050)
+            bestSellersView.heightAnchor.constraint(greaterThanOrEqualToConstant: 1020)
         ])
         
         scrollView.isScrollEnabled = true
@@ -179,7 +179,6 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
                 cell.product = products[indexPath.row]
             }
             return cell
-            
         }
     }
     

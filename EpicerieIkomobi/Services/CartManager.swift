@@ -7,6 +7,11 @@
 
 import Foundation
 
+
+protocol CartManagerDelegate: AnyObject {
+    func cartDidChange()
+}
+
 class CartManager {
     
     static let shared = CartManager()

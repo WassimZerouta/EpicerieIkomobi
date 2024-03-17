@@ -24,7 +24,6 @@ final class EpicerieIkomobiTestsCart: XCTestCase {
     }
 
     func testAddToCart() {
-
         let product = Product(id: 1, name: "Fraise", price: 2.0, image: "", packaging: Packaging(unit: "", measure: 2.00))
         cartManager.addToCart(product: product)
         
@@ -32,7 +31,6 @@ final class EpicerieIkomobiTestsCart: XCTestCase {
     }
     
     func testRemoveFromCart() {
-        
         let product = Product(id: 1, name: "Fraise", price: 2.0, image: "", packaging: Packaging(unit: "", measure: 2.00))
         cartManager.addToCart(product: product)
         cartManager.removeFromCart(productId: 1)
@@ -41,7 +39,6 @@ final class EpicerieIkomobiTestsCart: XCTestCase {
     }
     
     func testSpecificProductQuantity() {
-
         let product1 = Product(id: 1, name: "Fraise", price: 2.0, image: "", packaging: Packaging(unit: "", measure: 2.00))
         let product2 = Product(id: 2, name: "Pomme", price: 2.0, image: "", packaging: Packaging(unit: "", measure: 2.00))
         

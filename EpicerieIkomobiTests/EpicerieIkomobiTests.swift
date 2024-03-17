@@ -14,7 +14,6 @@ final class EpicerieIkomobiTests: XCTestCase {
     private var APIService: MockAPIManager!
     private var delegate: MockHomeViewController!
     
-    
     override func setUpWithError() throws {
         APIService = MockAPIManager()
         viewmodel = HomeViewModel(APIService: APIService)
@@ -37,32 +36,27 @@ final class EpicerieIkomobiTests: XCTestCase {
     }
     
     func testFailure() throws {
-        
         APIService.mockResult = .failure(.dataNotFound)
         viewmodel.fetchHomePageContent()
         
         XCTAssertEqual(delegate.updateViewArray.count, 0)
     }
-
 }
 
 class MockAPIManager: APIService {
     var mockResult: Result<EpicerieIkomobi.HomePageContent, EpicerieIkomobi.CustomError>?
+    
     func fetchHomePageContent(completion: @escaping (Result<EpicerieIkomobi.HomePageContent, EpicerieIkomobi.CustomError>) -> Void) {
         if let result = mockResult {
             completion(result)
         }
     }
-    
-
 }
 
 class MockHomeViewController: HomeViewModelDelegate {
-    
     public var updateViewArray: [HomePageContent] = []
     
     func updateView(banner: EpicerieIkomobi.Banner, categories: [EpicerieIkomobi.Category], products: [EpicerieIkomobi.Product]) {
         updateViewArray.append(HomePageContent(banner: banner, categories: categories, products: products))
-    
     } 
 }

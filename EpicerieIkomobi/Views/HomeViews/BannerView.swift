@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class BannerView: UIImageView {
+    
     var bannerStringUrl: String? {
         didSet {
             setupViews()

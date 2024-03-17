@@ -11,7 +11,7 @@ class APIManager: APIService {
     
     func fetchHomePageContent(completion: @escaping (Result<HomePageContent, CustomError>) -> Void) {
           
-        guard let url = URL(string: AppRessource.stringUrl.url) else {
+        guard let url = URL(string: AppResource.stringUrl.url) else {
               completion(.failure(.invalidURL))
               return
           }

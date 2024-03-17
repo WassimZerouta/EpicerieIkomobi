@@ -99,7 +99,7 @@ class BestSellersCollectionViewCell: UICollectionViewCell {
     var plusImageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
-        image.image = AppRessource.plusIcon.image
+        image.image = AppResource.plusIcon.image
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -116,7 +116,7 @@ class BestSellersCollectionViewCell: UICollectionViewCell {
     var minusImageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
-        image.image = AppRessource.minusIcon.image
+        image.image = AppResource.minusIcon.image
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()

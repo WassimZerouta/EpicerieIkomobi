@@ -11,6 +11,3 @@ protocol APIService {
     func fetchHomePageContent(completion: @escaping (Result<HomePageContent, CustomError>) -> Void)
 }
 
-protocol CartManagerDelegate: AnyObject {
-    func cartDidChange()
-}

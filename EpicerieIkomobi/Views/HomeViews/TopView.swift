@@ -14,7 +14,7 @@ class TopView: UIView {
     
     let profilImageView: UIImageView = {
         let view = UIImageView()
-        view.image = AppRessource.topViewProfilImageView.image
+        view.image = AppResource.topViewProfilImageView.image
         view.contentMode = .scaleAspectFill
         view.layer.cornerRadius = 25
         view.clipsToBounds = true
@@ -32,7 +32,7 @@ class TopView: UIView {
     
     let helloLabel: UILabel = {
         let label = UILabel()
-        label.text = AppRessource.topViewHelloLabel.text
+        label.text = AppResource.topViewHelloLabel.text
         label.textColor = .lightGray
         label.font = AppStyle.captionBold.font
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -41,7 +41,7 @@ class TopView: UIView {
     
     let profilNameLabel: UILabel = {
         let label = UILabel()
-        label.text = AppRessource.topViewProfilNameLabel.text
+        label.text = AppResource.topViewProfilNameLabel.text
         label.textColor = AppStyle.textColor.color
         label.font = AppStyle.title2.font
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -59,7 +59,7 @@ class TopView: UIView {
     var cartImageView: UIImageView = {
         let view = UIImageView()
         view.contentMode = .scaleAspectFit
-        view.image = AppRessource.cartIcon.image
+        view.image = AppResource.cartIcon.image
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -127,7 +127,7 @@ extension TopView: TopViewModelDelegate {
             cartQuantityImageView.image = UIImage(systemName: "\(cartQuantity).circle.fill")?.withTintColor(.red, renderingMode: .alwaysOriginal)
         } else if cartQuantity > 49 {
             cartQuantityImageView.isHidden = false
-            cartQuantityImageView.image = AppRessource.tomuchInCartIcon.image
+            cartQuantityImageView.image = AppResource.tomuchInCartIcon.image
         }
         else {
             cartQuantityImageView.isHidden = true

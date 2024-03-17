@@ -12,7 +12,7 @@ class BestSellersView: UIStackView {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = AppRessource.BestSellersViewTitle.text
+        label.text = AppResource.BestSellersViewTitle.text
         label.textColor = AppStyle.title.color
         label.font = AppStyle.title.font
         label.translatesAutoresizingMaskIntoConstraints = false

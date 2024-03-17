@@ -31,7 +31,7 @@
 		CFAAD73A2BA5C7DD00AAC78E /* TopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD7392BA5C7DD00AAC78E /* TopViewModel.swift */; };
 		CFAAD73D2BA5F91300AAC78E /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD73C2BA5F91300AAC78E /* CustomErrors.swift */; };
 		CFAAD73F2BA647DA00AAC78E /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD73E2BA647DA00AAC78E /* AppStyle.swift */; };
-		CFAAD7412BA6584800AAC78E /* AppRessource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD7402BA6584800AAC78E /* AppRessource.swift */; };
+		CFAAD7412BA6584800AAC78E /* AppResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD7402BA6584800AAC78E /* AppResource.swift */; };
 		CFAAD7442BA6766200AAC78E /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD73C2BA5F91300AAC78E /* CustomErrors.swift */; };
 		CFAAD7472BA67CDE00AAC78E /* EpicerieIkomobiTestsCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAAD7452BA67CDE00AAC78E /* EpicerieIkomobiTestsCart.swift */; };
 /* End PBXBuildFile section */
@@ -73,7 +73,7 @@
 		CFAAD7392BA5C7DD00AAC78E /* TopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewModel.swift; sourceTree = "<group>"; };
 		CFAAD73C2BA5F91300AAC78E /* CustomErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrors.swift; sourceTree = "<group>"; };
 		CFAAD73E2BA647DA00AAC78E /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
-		CFAAD7402BA6584800AAC78E /* AppRessource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRessource.swift; sourceTree = "<group>"; };
+		CFAAD7402BA6584800AAC78E /* AppResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResource.swift; sourceTree = "<group>"; };
 		CFAAD7452BA67CDE00AAC78E /* EpicerieIkomobiTestsCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicerieIkomobiTestsCart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,7 +183,7 @@
 				CFAAD7142BA4755900AAC78E /* Helpers.swift */,
 				CFAAD73C2BA5F91300AAC78E /* CustomErrors.swift */,
 				CFAAD73E2BA647DA00AAC78E /* AppStyle.swift */,
-				CFAAD7402BA6584800AAC78E /* AppRessource.swift */,
+				CFAAD7402BA6584800AAC78E /* AppResource.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -314,7 +314,7 @@
 				CFAAD7282BA49ED400AAC78E /* BestSellersView.swift in Sources */,
 				CFAAD7152BA4755900AAC78E /* Helpers.swift in Sources */,
 				CFAAD71B2BA47A3C00AAC78E /* CartManager.swift in Sources */,
-				CFAAD7412BA6584800AAC78E /* AppRessource.swift in Sources */,
+				CFAAD7412BA6584800AAC78E /* AppResource.swift in Sources */,
 				CFAAD7122BA474C200AAC78E /* APIManager.swift in Sources */,
 				CFAAD7312BA49FD000AAC78E /* BestSellersCollectionViewCell.swift in Sources */,
 				CFAAD6DA2BA46B2B00AAC78E /* HomeViewController.swift in Sources */,

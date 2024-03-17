@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-enum AppRessource {
+enum AppResource {
     //TEXT
     case topViewHelloLabel
     case topViewProfilNameLabel

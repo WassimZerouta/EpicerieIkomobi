@@ -8,7 +8,6 @@
 import Foundation
 
 protocol HomeViewModelDelegate: AnyObject {
-    
     func updateView(banner: Banner, categories: [Category], products: [Product])
 }
 
