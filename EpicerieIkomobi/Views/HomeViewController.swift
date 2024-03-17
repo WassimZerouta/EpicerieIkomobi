@@ -89,7 +89,6 @@ class HomeViewController: UIViewController {
     }
     
     func setupViews() {
-        
         view.addSubview(scrollView)
         view.addSubview(topView)
         
@@ -115,7 +114,7 @@ class HomeViewController: UIViewController {
             scrollViewContainer.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             scrollViewContainer.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             
-            bannerView.topAnchor.constraint(equalTo: scrollViewContainer.topAnchor, constant: 20),
+            bannerView.topAnchor.constraint(equalTo: scrollViewContainer.topAnchor, constant: 5),
             bannerView.centerXAnchor.constraint(equalTo: scrollViewContainer.centerXAnchor),
             bannerView.heightAnchor.constraint(equalToConstant: 160),
             
