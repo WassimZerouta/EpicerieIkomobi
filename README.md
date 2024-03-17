@@ -1,8 +1,8 @@
-# Test Épicerie Ikomobi
+# Test Ikomobi
 
 ## Description
 
-Application test Épicerie, une application permettant aux utilisateurs d'ajouter des articles à leur panier d'achat. Cette application a été développée en utilisant UIKit et suit une architecture MVVM (Model-View-ViewModel). La communication entre les composants se fait à l'aide du patron de conception Delegate. L'application est testée avec XCTest.
+Application test Ikomobi, une application permettant aux utilisateurs d'ajouter des articles à leur panier d'achat. Cette application a été développée en utilisant UIKit et suit une architecture MVVM (Model-View-ViewModel). La communication entre les composants se fait à l'aide du patron de conception Delegate. L'application est testée avec XCTest.
 
 ## Comment exécuter l'application
 
