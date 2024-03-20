@@ -16,3 +16,6 @@ Pour exécuter l'application, suivez ces étapes :
 
 - Affichage des articles.
 - Ajout et suppression des articles dans le panier.
+
+
+<img width="1115" alt="Capture d’écran 2024-03-20 à 13 32 38" src="https://github.com/WassimZerouta/EpicerieIkomobi/assets/96631972/c5d993e6-0712-4ec1-a049-926da1b73e08">
